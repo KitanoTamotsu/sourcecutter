@@ -1,18 +1,24 @@
 ## 　　Lesson27.　ワークフローを放置する  
 #### 開発メモ
+ワークフロー
+<br>　<img width="600" src="https://user-images.githubusercontent.com/40127279/127757659-6d253032-6f97-4433-801e-2773f3ef7e72.png">
 ### 1.選択中のテキストを変数に格納する
 　選択中のテキストはLesson3同様HOTKEYの設定タブのSelection in macOSで取得します
 <br>　その後、ArgandValsユーティリティを使って変数に格納します
 <br>　ArgandValsユーティリティというのはワークフローで『＞』となっているオブジェクトです
 <br>　開くと、{query}をselectionに格納する設定方法がわかりますので、ご参考まで
+<br>　<img width="600" src="https://user-images.githubusercontent.com/40127279/127757682-c03fea9d-b07e-4fce-a890-930a7a23f6a0.png">
+
 ### 2.ワークフローを放置する
 　上記selectionの中身をチェックします
 <br>　Conditionalユーティリティを利用しています
 <br>　先ほどセットしたselectionは{var:selection}として記載します
 <br>　Null値の場合（トップのアプリケーションで何も選択されていない場合）は
-<br>　ワークフローを放置します
+<br>　ワークフローを放置しています
 <br>　放置でOkというのは、スクリプトとしてはなかなか衝撃的ですね
-<br>　実際に稼働するときは、エラー音（？）が鳴理ますが問題ありません
+<br>　実際に稼働するときは、エラー音（？）が鳴りますが問題ありません
+<br>　<img width="600" src="https://user-images.githubusercontent.com/40127279/127757711-fb543c8b-a690-4a5f-a0cf-09490d724ed0.png">
+
 ### 3.自然数のチェック
 　selectionに何か文字列がある場合、alfredバーが表示されます
 <br>　ここでユーザーは切り取りたい文字数や行数を入力し、ScriptFilterに制御が渡ります
@@ -71,7 +77,9 @@
 <br>　いわば、ここでも放置です
 <br>　Alfredバーで選択してもなにも起こりません
 <br>　ただ、Alfredバーの入力訂正はできるので、○文字目、○行目を何度でも書き換えてOKです
-<br>
+<br>　
+<br>　<img width="600" src="https://user-images.githubusercontent.com/40127279/127757763-fb5495b7-15e6-4008-bb51-c39624e367a4.png">
+
 #### 背景
 　alfredのデバッグツールでエラーメッセージが出力される際に、○○行目とか○○文字目という
 <br>　ような記載があったりします
