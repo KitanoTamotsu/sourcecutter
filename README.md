@@ -1,4 +1,3 @@
-## 　　Lesson27.　ワークフローを放置する  
 #### 開発メモ
 ワークフロー
 <br>　<img width="600" src="https://user-images.githubusercontent.com/40127279/127757659-6d253032-6f97-4433-801e-2773f3ef7e72.png">
